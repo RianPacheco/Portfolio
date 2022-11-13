@@ -1,0 +1,558 @@
+/*** IMPORTAÇÂO DE FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --white-200: #f9f9f9;
+  --white-100: #fafafa;
+  --white: #fff;
+  --gray-900: #909090;
+  --gray-800: #828282;
+  --gray-700: #171717;
+  --gray-600: #212121;
+  --gray-400: #121212;
+  --blue-900: #110b4a;
+  --blue-800: #00bbff;
+  --blue-700: #3de0f2;
+  --blue-600: #00b2bf;
+  --blue-500: #00d2df;
+  --red-500: #cf0f0f;
+  --green-400: #628e75;
+  --pink-100: #d24074;
+}
+
+/*** RESET ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  background-color: var(--gray-700);
+}
+
+/*** ESTILIZAÇÂO DO SCROLL ***/
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+  background: var(--gray-700);
+  border-radius: 10px;
+}
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+  background: var(--blue-700);
+  border-radius: 15px;
+}
+
+/*** CABEÇÂLHO ***/
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(
+    95deg,
+    rgba(23, 23, 23, 0.5) 0%,
+    rgba(23, 23, 23, 0.4) 100%
+  );
+  backdrop-filter: blur(24px);
+  width: 100%;
+  height: 4.9rem;
+  position: fixed;
+  z-index: 999;
+}
+
+.cabecalho-imagem {
+  height: 27px;
+}
+
+.cabecalho-menu ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.cabecalho-menu-item {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--white-200);
+  visibility: initial;
+  transition: 1.4s all ease;
+}
+
+.cabecalho-menu-item:hover {
+  color: var(--blue-700);
+  text-shadow: 0.9px 1.2px 1.4em;
+}
+
+nav {
+  color: var(--blue-700);
+  display: flex;
+}
+
+/*** 01 SEÇÂO ***/
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid var(--blue-900);
+  padding: 20px;
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 17rem;
+  height: 100vh;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.conteudo-principal-escrito-titulo-rian {
+  font-family: "Dm Sans", sans-serif;
+  color: var(--blue-500);
+  font-size: 62px;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 22px;
+  color: var(--gray-800);
+  margin: 0 auto;
+}
+.digitação {
+  width: 100%;
+  animation: digitação 5s steps(50), cursor 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3.3px solid var(--blue-800);
+  margin: 2px;
+}
+@keyframes digitação {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.conteudo-principal-escrito-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 60px;
+  border: 2px solid var(--blue-500);
+  border-radius: 5px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 19px;
+  color: var(--white);
+  visibility: initial;
+  transition: 1s all ease;
+}
+
+.linkendi {
+  gap: 15px;
+  box-shadow: 0px 1px 5px 1px var(--blue-500);
+}
+
+.github {
+  gap: 15px;
+  border: 2px solid var(--pink-100);
+  box-shadow: 0px 1px 5px 1px var(--pink-100);
+}
+
+.botoes {
+  display: flex;
+  gap: 2em;
+}
+
+.imagem-principal {
+  width: 320px;
+  height: 254px;
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+}
+
+/*** 02 SEÇÂO ***/
+
+.Sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--gray-400);
+}
+
+.flex {
+  flex-direction: column;
+}
+
+.text-sobre {
+  color: var(--white-100);
+  font-size: 34px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.paragrafo-sobre {
+  width: 850px;
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--gray-800);
+  margin: 0 4rem;
+}
+
+.brands {
+  display: flex;
+  gap: 4em;
+}
+
+/*** 03 SEÇÂO ***/
+
+.Projetos {
+  display: flex;
+  align-items: center;
+  padding-top: 9em;
+  flex-direction: column;
+  height: 110vh;
+}
+
+.titulo-projetos {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 29px;
+  color: var(--white-100);
+}
+
+.row button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 184px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 19px;
+  color: var(--white);
+  visibility: initial;
+  transition: 1s all ease;
+}
+
+.row a {
+  color: var(--white);
+  width: 184px;
+}
+
+.card-projetos {
+  width: 580px;
+  height: 320px;
+  background-color: var(--gray-600);
+  border-radius: 10px;
+}
+
+.card-projetos img:hover {
+  width: 610px;
+  height: 350px;
+}
+
+.mundo-invertido img {
+  width: 580px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px var(--red-500);
+}
+
+.rocket img {
+  width: 580px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px 13px var(--gray-400);
+}
+
+.chihiro img {
+  width: 580px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px var(--green-400);
+}
+
+.portfolio img {
+  width: 580px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px var(--blue-700);
+}
+
+/*** 04 SEÇÂO ***/
+
+.Servicos {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--white);
+  height: 100vh;
+  background-color: var(--gray-400);
+}
+
+.row {
+  padding-top: 5em;
+  display: flex;
+  gap: 50px;
+}
+
+.card {
+  width: 460px;
+  height: 350px;
+  background-color: var(--gray-600);
+}
+
+.card:hover {
+  border: 1px solid var(--blue-600);
+}
+
+.card h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--gray-800);
+  margin-top: 2.8em;
+  margin-left: 0.7em;
+}
+
+.card img {
+  margin-left: 20px;
+  margin-top: 2em;
+}
+
+.fundo {
+  margin-top: 2.5em;
+  width: 460px;
+  height: 5px;
+  background-color: var(--blue-600);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*** 05 SEÇÂO ***/
+
+.Skills {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Dm Sans", sans-serif;
+}
+
+.chaves {
+  font-size: 40px;
+  color: var(--blue-700);
+  height: 50px;
+}
+
+.minhas-skills {
+  color: var(--white-100);
+  font-size: 34px;
+  font-family: "DM Sans", sans-serif;
+  height: 50px;
+}
+
+.front-end {
+  color: var(--gray-900);
+  font-size: 23px;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  height: 130px;
+  width: 142.5px;
+  padding: 0rem;
+  margin: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-600);
+}
+
+.icons img {
+  width: 80px;
+  height: 80.7px;
+}
+
+.icons:hover {
+  filter: brightness(100%);
+  cursor: pointer;
+  border: 0.15rem solid var(--blue-700);
+  border-radius: 10px;
+}
+
+.responsividade {
+  display: flex;
+}
+
+/*** ULTIMA SEÇÂO ***/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-400);
+  height: 50px;
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--gray-800);
+}
+
+/***Responsividade Cabeçãlho ***/
+
+@media (max-width: 800px) {
+  .cabecalho-imagem {
+    display: none;
+  }
+  .cabecalho-menu-item {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+/***Responsividade Conteudo Principal ***/
+
+@media (max-width: 1430px) {
+  .conteudo-principal {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .conteudo-principal-escrito-titulo-rian {
+    font-size: 60px;
+    width: 440px;
+  }
+  .imagem-principal {
+    display: none;
+  }
+  .botoes {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/***Responsividade Sobre ***/
+
+@media (max-width: 960px) {
+  .paragrafo-sobre {
+    width: 700px;
+  }
+}
+
+@media (max-width: 730px) {
+  .Sobre {
+    height: 120vh;
+  }
+  .paragrafo-sobre {
+    width: 400px;
+  }
+}
+
+@media (max-width: 490px) {
+  .conteudo-principal-escrito-botao {
+    width: 189px;
+  }
+}
+/***Responsivivdade Projetos ***/
+
+@media (max-width: 1550px) {
+  . {
+    display: block;
+  }
+  .Projetos {
+    height: 250vh;
+  }
+}
+
+/*** Responsividade Skills ***/
+
+@media (max-width: 960px) {
+  .Skills {
+    height: 120vh;
+  }
+  .responsividade {
+    flex-direction: column;
+  }
+}
