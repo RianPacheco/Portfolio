@@ -1,6 +1,6 @@
 # Portfolio &copy; Rian Pacheco 🚀💯
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/RianPacheco/Minha-HomePage/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/RianPacheco/Portfolio-RianPacheco/blob/main/LICENSE) 
 
 # Sobre o projeto
 
