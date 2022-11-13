@@ -16,6 +16,10 @@ A aplicação consiste em uma pagina para as pessoas ter acesso mais sobre mim e
 
 ## Layout web
 ![Web 1](./assets/img/Portfolio.PNG)
+![Web 2](./assets/Preview/Sobre.PNG)
+![Web 3](./assets/Preview/Projetos.PNG)
+![Web 3](./assets/Preview/Servicos.PNG)
+![Web 5](./assets/Preview/Skills.PNG)
 
 # Tecnologias utilizadas 💻 :
 
