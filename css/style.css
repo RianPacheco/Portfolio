@@ -546,6 +546,46 @@ footer {
   }
 }
 
+/*** Responsividade Serviços ***/
+
+@media (max-width: 1570px) {
+  .Servicos {
+    height: 160vh;
+  }
+  .Servicos .row {
+    display: block;
+    padding: 20px;
+  }
+  .card {
+    width: 570px;
+    margin-top: 35px;
+  }
+  .fundo {
+    width: 570px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Servicos {
+    height: 180vh;
+  }
+  .card {
+    width: 500px;
+  }
+  .fundo {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 420px;
+  }
+  .fundo {
+    width: 420px;
+  }
+}
+
 /*** Responsividade Skills ***/
 
 @media (max-width: 960px) {
