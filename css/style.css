@@ -578,6 +578,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .Servicos {
+    height: 240vh;
+  }
   .card {
     width: 420px;
   }
