@@ -276,29 +276,6 @@ nav {
   color: var(--white-100);
 }
 
-.row button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 184px;
-  height: 50px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 19px;
-  color: var(--white);
-  visibility: initial;
-  transition: 1s all ease;
-}
-
-.row a {
-  color: var(--white);
-  width: 184px;
-}
-
 .card-projetos {
   width: 580px;
   height: 320px;
@@ -306,35 +283,28 @@ nav {
   border-radius: 10px;
 }
 
-.card-projetos img:hover {
-  width: 610px;
-  height: 350px;
+.card-projetos img {
+  width: 580px;
+  height: 320px;
+  gap: 60px;
 }
 
 .mundo-invertido img {
-  width: 580px;
-  height: 320px;
   border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--red-500);
 }
 
 .rocket img {
-  width: 580px;
-  height: 320px;
   border-radius: 10px;
   box-shadow: 1px 1px 7px 13px var(--gray-400);
 }
 
 .chihiro img {
-  width: 580px;
-  height: 320px;
   border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--green-400);
 }
 
 .portfolio img {
-  width: 580px;
-  height: 320px;
   border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--blue-700);
 }
@@ -538,11 +508,19 @@ footer {
 /***Responsivivdade Projetos ***/
 
 @media (max-width: 1550px) {
-  . {
-    display: block;
-  }
   .Projetos {
     height: 250vh;
+  }
+  .card-projetos {
+    width: 700px;
+    height: 360px;
+  }
+  .card-projetos img {
+    width: 700px;
+    height: 370px;
+  }
+  .row {
+    display: block;
   }
 }
 
