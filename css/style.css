@@ -150,7 +150,7 @@ nav {
   margin: 0 auto;
 }
 .digitação {
-  width: 100%;
+  width: 85%;
   animation: digitação 5s steps(50), cursor 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -471,15 +471,22 @@ footer {
     text-align: center;
   }
   .conteudo-principal-escrito-titulo-rian {
-    font-size: 60px;
-    width: 440px;
+    font-size: 48px;
+    width: 500px;
   }
   .imagem-principal {
     display: none;
   }
+  .digitação {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 72%;
+  }
   .botoes {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 360px;
   }
 }
 
@@ -493,7 +500,7 @@ footer {
 
 @media (max-width: 730px) {
   .Sobre {
-    height: 120vh;
+    height: 110vh;
   }
   .paragrafo-sobre {
     width: 400px;
@@ -501,8 +508,12 @@ footer {
 }
 
 @media (max-width: 490px) {
-  .conteudo-principal-escrito-botao {
-    width: 189px;
+  .paragrafo-sobre {
+    width: 320px;
+    font-size: 20px;
+  }
+  .Sobre .botoes {
+    width: 325px;
   }
 }
 /***Responsivivdade Projetos ***/
@@ -524,11 +535,26 @@ footer {
   }
 }
 
+@media (max-width: 500px) {
+  .Projetos {
+    height: 160vh;
+  }
+
+  .card-projetos {
+    width: 330px;
+    height: 150px;
+  }
+  .card-projetos img {
+    width: 330px;
+    height: 180px;
+  }
+}
+
 /*** Responsividade Serviços ***/
 
 @media (max-width: 1570px) {
   .Servicos {
-    height: 160vh;
+    height: 170vh;
   }
   .Servicos .row {
     display: block;
@@ -557,13 +583,13 @@ footer {
 
 @media (max-width: 500px) {
   .Servicos {
-    height: 240vh;
+    height: 230vh;
   }
   .card {
-    width: 420px;
+    width: 345px;
   }
   .fundo {
-    width: 420px;
+    width: 345px;
   }
 }
 
@@ -571,7 +597,7 @@ footer {
 
 @media (max-width: 960px) {
   .Skills {
-    height: 120vh;
+    height: 100vh;
   }
   .responsividade {
     flex-direction: column;
