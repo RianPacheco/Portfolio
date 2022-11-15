@@ -449,13 +449,7 @@ footer {
 /***Responsividade Cabeçãlho ***/
 
 @media (max-width: 800px) {
-  .cabecalho-imagem {
-    display: none;
-  }
-  .cabecalho-menu-item {
-    display: none;
-  }
-  nav {
+  .cabecalho {
     display: none;
   }
 }
@@ -469,18 +463,20 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 0px;
+    margin: 0 auto;
   }
   .conteudo-principal-escrito-titulo-rian {
-    font-size: 48px;
-    width: 500px;
+    font-size: 46px;
+    width: 360px;
   }
   .imagem-principal {
     display: none;
   }
   .digitação {
-    font-size: 20px;
+    font-size: 17px;
     margin: 0 auto;
-    width: 72%;
+    animation: digitação 4s steps(30), cursor 0.5s step-end infinite alternate;
   }
   .botoes {
     display: flex;
@@ -558,7 +554,7 @@ footer {
   }
   .Servicos .row {
     display: block;
-    padding: 20px;
+    padding: 13px;
   }
   .card {
     width: 570px;
