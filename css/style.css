@@ -287,25 +287,22 @@ nav {
   width: 580px;
   height: 320px;
   gap: 60px;
+  border-radius: 10px;
 }
 
 .mundo-invertido img {
-  border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--red-500);
 }
 
 .rocket img {
-  border-radius: 10px;
   box-shadow: 1px 1px 7px 13px var(--gray-400);
 }
 
 .chihiro img {
-  border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--green-400);
 }
 
 .portfolio img {
-  border-radius: 10px;
   box-shadow: 1px 1px 6px 1px var(--blue-700);
 }
 
@@ -504,9 +501,12 @@ footer {
 }
 
 @media (max-width: 490px) {
+  .text-sobre {
+    font-size: 29px;
+  }
   .paragrafo-sobre {
     width: 320px;
-    font-size: 20px;
+    font-size: 17px;
   }
   .Sobre .botoes {
     width: 325px;
@@ -527,7 +527,7 @@ footer {
     height: 370px;
   }
   .row {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -535,7 +535,6 @@ footer {
   .Projetos {
     height: 160vh;
   }
-
   .card-projetos {
     width: 330px;
     height: 150px;
@@ -551,6 +550,7 @@ footer {
 @media (max-width: 1570px) {
   .Servicos {
     height: 170vh;
+    padding: 50px;
   }
   .Servicos .row {
     display: block;
@@ -580,6 +580,7 @@ footer {
 @media (max-width: 500px) {
   .Servicos {
     height: 230vh;
+    font-size: 23px;
   }
   .card {
     width: 345px;
@@ -597,5 +598,25 @@ footer {
   }
   .responsividade {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .chaves {
+    font-size: 35px;
+  }
+  .minhas-skills {
+    font-size: 33px;
+  }
+  .front-end {
+    font-size: 20px;
+  }
+  .icons {
+    width: 130px;
+    height: 114px;
+  }
+  .icons img {
+    width: 87px;
+    height: 74px;
   }
 }
