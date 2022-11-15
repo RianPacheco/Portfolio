@@ -110,6 +110,21 @@ nav {
   display: flex;
 }
 
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
 /*** 01 SEÇÂO ***/
 
 .conteudo {
@@ -447,12 +462,44 @@ footer {
 
 @media (max-width: 800px) {
   .cabecalho {
+    justify-content: space-between;
+    padding: 39px;
   }
   .cabecalho-imagem {
     height: 22px;
   }
-  nav {
-    display: none;
+  .navlist {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+      95deg,
+      rgba(23, 23, 23, 0.96) 0%,
+      rgba(23, 23, 23, 0.96) 100%
+    );
+  }
+  .navlist.active {
+    left: 0;
+  }
+  .navlist li {
+    margin: 8px 0;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(43deg);
+  }
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-43deg);
   }
 }
 

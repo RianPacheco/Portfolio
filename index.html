@@ -25,13 +25,18 @@
       <img class="cabecalho-imagem" draggable="false" onclick="window.open('https://www.serasa.com.br/ensina/seu-cpf-protegido/cartao-clonado-saiba-o-que-fazer-e-como-se-proteger/')"src="./assets/img/Pacheco.svg" alt="logo"/>
 
       <nav class="cabecalho-menu">
-        <ul>
+        <ul class="navlist">
           <li><a class="cabecalho-menu-item" href="#Home">Home</a></li>
           <li><a class="cabecalho-menu-item" href="#About">Sobre</a></li>
           <li><a class="cabecalho-menu-item" href="#Projects">Projetos</a></li>
           <li><a class="cabecalho-menu-item" href="#Services">Serviços</a></li>
           <li><a class="cabecalho-menu-item" href="#Skills">Skills</a></li>
         </ul>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
 
@@ -182,6 +187,7 @@
     <footer>
       <p>2022- &copy; Rian Pacheco</p>
     </footer>
+    <script src="index.js"></script>
     <script src="vanilla.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".card") , {
