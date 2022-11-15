@@ -447,6 +447,11 @@ footer {
 
 @media (max-width: 800px) {
   .cabecalho {
+  }
+  .cabecalho-imagem {
+    height: 22px;
+  }
+  nav {
     display: none;
   }
 }
