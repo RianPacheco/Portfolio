@@ -11,8 +11,11 @@ Portfolio é um projeto web construído para contar mais sobre minha trajetoria 
 A aplicação consiste em uma pagina para as pessoas ter acesso mais sobre mim e ter acesso a alguns projetos desenvolvidos por mim..
 
 ## Layout mobile 🚧
-![Mobile 1](./img/Preview/Preview-Moblie.PNG) 
-![Mobile 2](./img/Preview/Preview-Mobile-2.PNG)
+![Mobile 1](./assets/Preview/Home-Mobile.PNG) 
+![Mobile 2](./assets/Preview/Sobre-Mobile.PNG)
+![Mobile 2](./assets/Preview/Projetos-Mobile.PNG)
+![Mobile 2](./assets/Preview/Servicos-Mobile.PNG)
+![Mobile 2](./assets/Preview/Skills-Mobile.PNG)
 
 ## Layout web
 ![Web 1](./assets/img/Portfolio.PNG)
