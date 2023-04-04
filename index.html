@@ -15,6 +15,7 @@
     <title>Portfolio | Rian Pacheco</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/carrosel.css">
     <link rel="shortcut icon" href="./assets/img/favicon/favicon-new.svg" type="image/x-icon"/>
   
   </head>
@@ -93,28 +94,15 @@
 
     <main>
         <section class="Projetos" id="Projects">
-
           <h1 class="titulo-projetos">Projetos</h1><br /><br />
-            <div class="row">
-              <div class="card-projetos mundo-invertido"data-aos="fade-down">
-                <a href="https://rianpacheco.github.io/Mundo-Invertido/" target="_blank"><img src="./assets/img/mundo-invertido.gif" alt="mundo-invertido"></a>
-              </div>
-
-              <div class="card-projetos rocket"data-aos="fade-down">
-                <a href="https://rocket-pay-delta.vercel.app" target="_blank"><img src="./assets/img/Rocket-Pay.PNG" alt="rocket-pay"></a>
-              </div>
+          <div class="carrosel-wrapper">
+            <div class="carrosel-container">
+              <div class="carrosel-slider"></div>
+              <button class="prev carrosel__btn--style"></button>
+              <button class="next carrosel__btn--style"></button>
             </div>
-
-            <div class="row">
-              <div class="card-projetos chihiro"data-aos="fade-down">
-                <a href=" https://rianpacheco.github.io/Codelandia-Desafio-5/" target="_blank"><img src="https://github.com/RianPacheco/Codelandia-Desafio-5/blob/master/assets/img/Preview-Desktop.PNG?raw=true" alt="chihiro"></a>
-              </div> 
-
-              <div class="card-projetos portfolio"data-aos="fade-down">
-                <a href="https://portfolio-rianpacheco.vercel.app" target="_blank"><img src="./assets/img/Portfolio.PNG" alt="Portfolio"></a>
-              </div>
-            </div>
-
+              <div class="circle-container"></div>
+          </div>
         </section>
         
         <section class="Servicos" id="Services">
