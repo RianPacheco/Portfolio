@@ -98,3 +98,18 @@ body {
   box-shadow: 1px 1px 1px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .circle-container .circle-item {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .carrosel-container {
+    width: 24rem;
+    height: 20rem;
+  }
+  .carrosel-container .carrosel-slider .img-item {
+    width: 24rem;
+    height: 19.5rem;
+  }
+}

@@ -540,30 +540,11 @@ footer {
   .Projetos {
     height: 250vh;
   }
-  .card-projetos {
-    width: 700px;
-    height: 360px;
-  }
-  .card-projetos img {
-    width: 700px;
-    height: 370px;
-  }
-  .row {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 500px) {
   .Projetos {
-    height: 160vh;
-  }
-  .card-projetos {
-    width: 330px;
-    height: 150px;
-  }
-  .card-projetos img {
-    width: 330px;
-    height: 180px;
+    height: 137vh;
   }
 }
 
