@@ -20,20 +20,20 @@ let index = 0
 let suasImagens = [
   {
     index:0,                  
-    src:'./assets/img/Portfolio.png'    
+    src:'../assets/img/Portfolio.svg'    
   },
   {
     index:1,                  
-    src:'./assets/img/mundo-invertido.gif'
+    src:'../assets/img/mundo-invertido.svg'
   },
   
   {
     index:2,                  
-    src:'./assets/img/Rocket-Pay.png'
+    src:'../assets/img/Rocket-Pay.svg'
   },
   {
     index:3,                  
-    src:'./assets/img/Code-MOji.Png'
+    src:'../assets/img/Code-MOji.svg'
   }
 ]
 
