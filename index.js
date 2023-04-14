@@ -20,7 +20,7 @@ let index = 0
 let suasImagens = [
   {
     index:0,                  
-    src:'../assets/img/Portfolio.svg'    
+    src:'../assets/img/Portfolio.svg'
   },
   {
     index:1,                  
