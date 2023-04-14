@@ -33,7 +33,7 @@ let suasImagens = [
   },
   {
     index:3,                  
-    src:'../assets/img/Code-MOji.svg'
+    src:'../assets/img/Code-Moji.svg'
   }
 ]
 
