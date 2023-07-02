@@ -4,7 +4,7 @@
 
 # Sobre o projeto 💎
 
-https://portfolio-rianpacheco.vercel.app
+https://devrianpacheco.vercel.app
 
 Portfolio é um projeto web construído para contar mais sobre minha trajetoria como dev e um pouco sobre oque eu faço, um resumo...
 
