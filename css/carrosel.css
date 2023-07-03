@@ -106,10 +106,10 @@ body {
   }
   .carrosel-container {
     width: 24rem;
-    height: 20rem;
+    height: 35rem;
   }
   .carrosel-container .carrosel-slider .img-item {
     width: 24rem;
-    height: 20rem;
+    height: 35rem;
   }
 }

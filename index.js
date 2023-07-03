@@ -6,6 +6,11 @@ hamburguer.addEventListener('click', () =>{
   navList.classList.toggle('active')
 })
 
+navList.addEventListener('click', () =>{
+  navList.classList.toggle('active')
+  hamburguer.classList.toggle('active')
+})
+
 
 // Carrosel 
 
