@@ -171,13 +171,13 @@ main:nth-child(1) {
   height: 100vh;
 }
 
-article:nth-child(1) {
+.home article {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-article h2:nth-child(1) {
+.home article h2:nth-child(1) {
   font-family: "Dm Sans", sans-serif;
   font-size: 24px;
   color: var(--white);
