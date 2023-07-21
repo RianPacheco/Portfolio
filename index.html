@@ -22,16 +22,16 @@
 
   <body>
   
-    <header class="cabecalho">
-      <img class="cabecalho-imagem" draggable="false" onclick="window.open('https://www.serasa.com.br/ensina/seu-cpf-protegido/cartao-clonado-saiba-o-que-fazer-e-como-se-proteger/')"src="./assets/img/Pacheco.svg" alt="logo"/>
+    <header>
+      <img draggable="false" onclick="window.open('https://www.serasa.com.br/ensina/seu-cpf-protegido/cartao-clonado-saiba-o-que-fazer-e-como-se-proteger/')"src="./assets/img/Pacheco.svg" alt="logo"/>
 
-      <nav class="cabecalho-menu">
+      <nav>
         <ul class="navlist">
-          <li><a class="cabecalho-menu-item" href="#Home">Home</a></li>
-          <li><a class="cabecalho-menu-item" href="#About">Sobre</a></li>
-          <li><a class="cabecalho-menu-item" href="#Projects">Projetos</a></li>
-          <li><a class="cabecalho-menu-item" href="#Services">Serviços</a></li>
-          <li><a class="cabecalho-menu-item" href="#Skills">Skills</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">Sobre</a></li>
+          <li><a href="#Projects">Projetos</a></li>
+          <li><a href="#Services">Serviços</a></li>
+          <li><a href="#Skills">Skills</a></li>
         </ul>
         <div class="hamburguer">
           <span class="bar"></span>
@@ -41,60 +41,88 @@
       </nav>
     </header>
 
-    <main class="conteudo">
+    <main>
+      <section class="home" id="Home" data-aos="fade-down">
 
-      <section class="conteudo-principal" id="Home"data-aos="fade-down">
-        <article class="conteudo-principal-escrito"data-aos="fade-down">
-          <h2 class="conteudo-principal-escrito-titulo"data-aos="fade-down">Olá, eu sou</h2>
-          <h1 class="conteudo-principal-escrito-titulo-rian"data-aos="fade-down">Rian Pacheco :)</h1>
-          <h2 class="conteudo-principal-escrito-subtitulo digitação"data-aos="fade-down">
+        <article data-aos="fade-down">
+          <h2 data-aos="fade-down">Olá, eu sou</h2>
+          <h1 class="nome-one" data-aos="fade-down">Rian Pacheco :)</h1>
+          <h2 class="subtitulo digitação" data-aos="fade-down">
             Desenvolvedor Front-end e Mobile.
           </h2><br />
           <div class="botoes">
-            <a href="https://www.linkedin.com/in/rian-pacheco/" target="_blank" class="conteudo-principal-escrito-botao linkendi">
+            <a href="https://www.linkedin.com/in/rian-pacheco/" target="_blank" class="botao blue">
               <img src="./assets/img/linkedin-brands.svg" alt="linkendi">
               <h1>LinkendIn</h1>
             </a>
-            <a href="https://github.com/RianPacheco" target="_blank" class="conteudo-principal-escrito-botao github">
+            <a href="https://github.com/RianPacheco" target="_blank" class="botao pink">
               <img src="./assets/img/github-brands.svg" alt="github">
               <h1>GitHub</h1>
             </a>
           </div>
         </article>
+
         <div id="img">
           <img class="imagem-principal" src="./assets/img/undraw.svg" alt="imagem-html-css"/>
         </div>
+
       </section>
 
       <section class="Sobre flex" id="About">
-          <h1 class="text-sobre"data-aos="fade-down">Sobre mim</h1><br /><br />
-          <p class="paragrafo-sobre"data-aos="fade-down">
+          <h1 class="text-sobre" data-aos="fade-down">Sobre mim</h1><br>
+          <span class="barra" data-aos="fade-down"></span><br /><br />
+          <p class="paragrafo-sobre" data-aos="fade-down">
            Olá como vai? Espero que bem me chamo Rian Pacheco, tenho 16 anos, sou de São Paulo, SP e sou Desenvolvedor Front-End e Mobile, me apaixonei pela programação desde de muito novo por conta de ser viciado em Games (até hoje) e a partir daquele momento comecei minha carreira como Programador. Eu desenvolvo sites e aplicações modernas e interativas como essa que você está navegando agora.
           </p><br /><br />
 
-          <div class="brands"data-aos="fade-down">
-            <a href="https://www.instagram.com/rian_pachecooo/" target="_blank"><img src="./assets/img/instagram-brands.svg" alt="instagram"></a>
-            <a href="https://www.twitch.tv/rian_pacheco" target="_blank"><img src="./assets/img/twitch-brands.svg" alt="twitch"></a>
-            <a href="https://www.youtube.com/channel/UCv2EfUxuJWM6_kuKier8BxA" target="_blank"><img src="./assets/img/youtube-brands.svg" alt="youtube"></a>
-            <a href="https://twitter.com/_Programador21_" target="_blank"><img src="./assets/img/twitter-brands.svg" alt="twitter"></a>
+          <div class="brands" data-aos="fade-down">
+            <a href="https://www.instagram.com/rian_pachecooo/" target="_blank">
+              <img src="./assets/img/instagram-brands.svg" alt="instagram">
+            </a>
+            <a href="https://www.twitch.tv/rian_pacheco" target="_blank">
+              <img src="./assets/img/twitch-brands.svg" alt="twitch">
+            </a>
+            <a href="https://www.youtube.com/channel/UCv2EfUxuJWM6_kuKier8BxA" target="_blank">
+              <img src="./assets/img/youtube-brands.svg" alt="youtube">
+            </a>
+            <a href="https://twitter.com/_Programador21_" target="_blank">
+              <img src="./assets/img/twitter-brands.svg" alt="twitter">
+            </a>
           </div><br /> <br />
 
-          <div class="botoes"data-aos="fade-down">
-              <a download href="./assets/arquivos/Currículo-Rian Pacheco-Dev.pdf" target="_blank" class="conteudo-principal-escrito-botao github">
+          <div class="botoes" data-aos="fade-down">
+              <a download href="./assets/arquivos/Currículo-Rian Pacheco-Dev.pdf" target="_blank" class="botao pink">
                 <img src="./assets/img/download-cloud-brands.svg" alt="curriculo">
                 <p>Currículo</p>
               </a>
-             <a href="https://mailto:rianpacheco87@gmail.com" target="_blank" class="conteudo-principal-escrito-botao linkendi">
+             <a href="https://mailto:rianpacheco87@gmail.com" target="_blank" class="botao blue">
               <img src="./assets/img/mail.svg" alt="github">
               <p>E-Mail</p>
             </a>
-        </div>
+          </div>
+
+          <!-- <div class="project-counter-wrp">
+              <ul>
+                  <li data-aos="fade-right">
+                      <p id="number1" class="number">3</p>
+                      <span></span>
+                      <p>Anos de Experiencia.</p>
+                  </li>
+                  <li data-aos="fade-left">
+                      <p id="number2" class="number">24</p>
+                      <span></span>
+                      <p>Projetos Realizados</p>
+                  </li>
+              </ul>
+           </div> -->
+
       </section>
     </main>
 
     <main>
-        <section class="Projetos" id="Projects">
-          <h1 class="titulo-projetos">Projetos</h1><br /><br />
+        <section class="Projetos" id="Projects" data-aos="fade-down">
+          <h1 class="titulo-projetos">Projetos</h1><br /><br>
+          <span class="barra" data-aos="fade-down"></span><br />
           <div class="carrosel-wrapper">
             <div class="carrosel-container">
               <div class="carrosel-slider"></div>
@@ -106,7 +134,8 @@
         </section>
         
         <section class="Servicos" id="Services">
-          <h1>Serviços</h1>
+          <h1 data-aos="fade-down">Serviços</h1><br>
+          <span class="barra" data-aos="fade-down"></span><br />
           <div class="row">
             <div class="card"data-aos="fade-down">
               <img class="img" src="./assets/img/code-brands.svg" alt="code-brands" />
@@ -188,12 +217,12 @@
           max: 20,
       }) 
     </script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		      <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
 		        AOS.init(
 			    {
 				    duration:1600
 			    });
-		    </script>
+		</script>
   </body>
 </html>

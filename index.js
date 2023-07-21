@@ -12,6 +12,35 @@ navList.addEventListener('click', () =>{
 })
 
 
+// Animation Numbers
+
+        var project = setInterval(yearsofexperience, 50)
+        var clients = setInterval(projectdone, 50)
+        let count1 = 1;
+        let count2 = 1;
+        let count3 = 1;
+
+        function yearsofexperience() {
+            count1++
+            document.querySelector("#number1").innerHTML = count1
+            if (count1 == 3) {
+                clearInterval(project)
+            }
+        }
+
+        function projectdone() {
+            count2++
+            document.querySelector("#number2").innerHTML = count2
+            if (count2 == 24) {
+                clearInterval(clients)
+            }
+        }
+
+        
+
+
+
+
 // Carrosel 
 
 //variaveis
@@ -168,4 +197,3 @@ function paintCircle(param){
   
 }
  
-
